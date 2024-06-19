@@ -51,7 +51,7 @@ df = pd.DataFrame({
 	})
 
 # Write the DataFrame to a CSV file
-df.to_csv('doctors_info.csv', index=False)
+df.to_csv('doctors_info_sk.csv', index=False)
 
 # Display the DataFrame
 print(df)	
