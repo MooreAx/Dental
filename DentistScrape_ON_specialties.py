@@ -25,14 +25,14 @@ primarypractices = []
 addresses = []
 links = []
 
-i=0
+#i=0
 
 # Loop through the values of a specific column
 for index, row in members.iterrows():
 
-    i += 1
-    if i > 10:
-        break
+ #   i += 1
+ #   if i > 10:
+ #       break
 
     link = row["Link"]
 
@@ -51,6 +51,7 @@ for index, row in members.iterrows():
 
     try:
         specialty = dentistdetails.find(string = "Specialty:").parent.next_sibling.next_sibling.text.strip()
+        print(specialty)
     except:
         specialty = None
     specialties.append(specialty)
